@@ -1,7 +1,8 @@
 name: Greeting
 
 on:
-  push: [main]
+  push:
+    branches: [main]
 
 jobs:
   greet:
