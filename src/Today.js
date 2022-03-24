@@ -3,7 +3,7 @@ const Today = (props) => {
     "Sunday",
     "Monday",
     "Tuesday",
-    "Wdenesday",
+    "Wednesday",
     "Thursday",
     "Friday",
     "Saturday",
