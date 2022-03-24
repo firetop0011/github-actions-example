@@ -14,7 +14,7 @@ const Today = (props) => {
   const month = date.getMonth() + 1;
   const day = date.getDate();
   const currWeekDay = weekdays[date.getDay()];
-  return `the day is ${currWeekDay} ${day}/${month}/${year}`;
+  return `Today is ${currWeekDay} ${day}/${month}/${year}`;
 };
 
 export default Today;
