@@ -1,8 +1,6 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import Today from "./Today";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test("App returns the right date format", () => {
+  const day = Today(new Date());
+  expect(day).toBe("Today is Thursday 24/3/2022");
 });
