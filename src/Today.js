@@ -1,4 +1,4 @@
-const Today = ({ date = new Date() }) => {
+const Today = (props) => {
   const weekdays = [
     "Sunday",
     "Monday",
@@ -8,6 +8,8 @@ const Today = ({ date = new Date() }) => {
     "Friday",
     "Saturday",
   ];
+  let date = props.date;
+  date = date ? new Date(date) : new Date();
   const year = date.getFullYear();
   const month = date.getMonth() + 1;
   const day = date.getDate();
